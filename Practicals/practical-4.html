@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reorder,offset,Nesting Column</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center">
+        <p class="h3 mt-4">Offset classes</p><br/>
+           <div class="row border">
+            <div class="col-md-4 border border-dark">.col-md-4</div>
+            <div class="col-md-4 offset-md-4 border border-dark">.col-md-4 .offset-md-4</div>
+           </div>
+        <p class="h3 mt-4">ReOrder Classes</p>
+        <br/>
+        <div class="row border border-dark ">
+            <div class="col border">
+                First in dom,no order applied
+            </div>
+            <div class="col order-5 border">
+                second in dom,with larger order 
+            </div>
+            <div class="col order-1 border">
+                third in dom,with an order 1
+            </div>
+        </div>
+            <br/>
+            <p class="h3 mt-4">Nesting column Classes</p><br/>
+            <div class="row border">
+                <div class="col-3 border border-dark">This is 3 column</div> 
+                <div class="col-9 border border-dark">This is 9 column.
+                    <div class="row border">
+                        <div class="col-3 border border">this is 3 nested column.</div> 
+                        <div class="col-9 border border">this is 9 nested column.</div>
+                </div>
+            </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
